@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Reading Training App</string>
-    <string name="toggle_visibility_button">Show</string>
+    <string name="show_number">Pokaż</string>
+    <string name="check_number">Sprawdź</string>
+    <string name="next">Dalej</string>
+    <string name="number_input_hint"/>
 </resources>

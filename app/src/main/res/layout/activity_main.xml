@@ -5,22 +5,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10sp"
         tools:context=".MainActivity">
     <TextView
             android:id="@+id/text_to_remember_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Hello World!"
+            android:text=""
             android:textSize="30sp"
+            android:visibility="invisible"
     />
+
+    <EditText
+            android:id="@+id/input_number_edit_text"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/number_input_hint"
+            android:inputType="phone"
+            android:autofillHints=""
+            android:textAlignment="center"/>
     <Button
-            android:id="@+id/toggle_visibility_button"
+            android:id="@+id/read_check_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@string/toggle_visibility_button"
+            android:text="@string/show_number"
     />
 
 
