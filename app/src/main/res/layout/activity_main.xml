@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginTop="10sp"
         tools:context=".MainActivity">
@@ -17,15 +18,14 @@
             android:visibility="invisible"
     />
 
-    <EditText
+    <TextView
             android:id="@+id/input_number_edit_text"
             android:layout_width="176dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:hint="@string/number_input_hint"
-            android:inputType="phone"
-            android:autofillHints=""
-            android:textAlignment="center"/>
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:background="@color/browser_actions_bg_grey"/>
     <Button
             android:id="@+id/read_check_button"
             android:layout_width="wrap_content"
@@ -34,5 +34,77 @@
             android:text="@string/show_number"
     />
 
+    <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:useDefaultMargins="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+        <Button
+                android:layout_column="0"
+                android:id="@+id/_1"
+                android:text="@string/_1"/>
+
+        <Button
+                android:layout_column="1"
+                android:id="@+id/_2"
+                android:text="@string/_2"/>
+
+        <Button
+                android:layout_column="2"
+                android:id="@+id/_3"
+                android:text="@string/_3"/>
+
+        <Button
+                android:layout_column="0"
+                android:id="@+id/_4"
+                android:text="@string/_4"/>
+
+        <Button
+                android:layout_column="1"
+                android:id="@+id/_5"
+                android:text="@string/_5"/>
+
+        <Button
+                android:layout_column="2"
+                android:id="@+id/_6"
+                android:text="@string/_6"/>
+
+        <Button
+                android:layout_column="0"
+                android:id="@+id/_7"
+                android:text="@string/_7"/>
+
+        <Button
+                android:layout_column="1"
+                android:id="@+id/_8"
+                android:text="@string/_8"/>
+
+        <Button
+                android:layout_column="2"
+                android:id="@+id/_9"
+                android:text="@string/_9"/>
+
+        <Button
+                android:layout_column="1"
+                android:id="@+id/_0"
+                android:text="@string/_0"/>
+        <Button
+                android:layout_column="2"
+                android:id="@+id/delete"
+                android:text="@string/delete"/>
+    </GridLayout>
+
+    <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
 
 </LinearLayout>
