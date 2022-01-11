@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.delete).setOnClickListener {
-            inputNumber.text = inputNumber.text.subSequence(inputNumber.text.lastIndex - 1, inputNumber.text.lastIndex)
+            inputNumber.text = inputNumber.text.dropLast(1);
         }
     }
 
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         gamePhase = Phase.DURING_ACTIVITY
         textToRemember.visibility = View.INVISIBLE
         inputNumber.setTextColor(Color.BLACK)
-        inputNumber.clearComposingText()
+        inputNumber.text = ""
         setButtonText(SHOW_NUMBER_TEXT)
         gamePhase = Phase.READ
     }
